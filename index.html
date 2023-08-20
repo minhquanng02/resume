@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quan Nguyen</title>
+    <link rel="stylesheet" href="./asset/style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+
+    <section class="banner" id="home">
+
+        <div class="imgSidebar">
+            <img src="./asset/images/bg.jpg" alt="Background1">
+        </div>
+        <div class="contentBx">
+            <h5 class="logoText">My portfolio</h5>
+            <div>
+                <h4><span>Hello</span>, I'm</h4>
+                <h2>Nguyen Minh Quan</h2>
+                <h4>I'm a Front End Web Developer.</h4>
+                <p>Doan gioi thieu. Doan gioi thieu. Doan gioi thieu. Doan gioi thieu. Doan gioi thieu. Doan gioi thieu. Doan gioi thieu. Doan gioi thieu. Doan gioi thieu. Doan gioi thieu. Doan gioi thieu. Doan gioi thieu. Doan gioi thieu. Doan gioi thieu. Doan gioi thieu. Doan gioi thieu.</p>
+                <a href="#" class="btn">About Me</a>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="./asset/images/facebook.png" alt="facebook-logo"></a></li>
+            <li><a href="#"><img src="./asset/images/twitter.png" alt="twitter-logo"></a></li>
+            <li><a href="#"><img src="./asset/images/instagram.png" alt="instagram-logo"></a></li>
+        </ul>
+    </section>
+
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const sideBar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active')
+            sideBar.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
